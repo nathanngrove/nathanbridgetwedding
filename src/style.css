@@ -1,0 +1,106 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.wrapper {
+	display: grid;
+	gap: 2rem;
+	place-items: center;
+}
+
+h1 {
+	font-family: "Great Vibes", cursive;
+	font-weight: 400;
+	font-style: normal;
+}
+
+h2,
+p {
+	font-family: "Lancelot", serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.main-section {
+	background-image: url("/background.jpg");
+	background-position: 50% 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	max-height: 70vh;
+	min-width: 100%;
+}
+
+.main-text {
+	color: white;
+	display: grid;
+	place-items: center;
+	gap: 3rem;
+	padding: 3rem 0;
+}
+
+.main-headline {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h1 {
+	font-size: clamp(2rem, 8vw + 1rem, 6rem);
+}
+
+h2 {
+	font-size: clamp(1rem, 5vw + 1rem, 4rem);
+}
+
+.countdown-section {
+	display: grid;
+	place-items: center;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 3rem;
+}
+
+@media (max-width: 37.5rem) {
+	.countdown-section {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		gap: 2rem;
+	}
+}
+
+.countdown-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-grow: 1;
+}
+
+.countdown-number {
+	font-size: clamp(1rem, 5vw + 1rem, 3rem);
+}
+
+.countdown-unit {
+	font-size: clamp(0.5rem, 3vw + 1rem, 1.5rem);
+}
+
+.footer-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+.footer-section p {
+	text-align: center;
+	font-size: clamp(1rem, 3vw + 1rem, 2rem);
+}
+
+@media (min-width: 50rem) {
+	.hidden {
+		display: none;
+	}
+}
