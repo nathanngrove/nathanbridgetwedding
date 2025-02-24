@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-	assetPrefix: "/nathanbridgetwedding",
+	basePath: "/nathanbridgetwedding",
 	output: "export",
 	reactStrictMode: true,
 };
