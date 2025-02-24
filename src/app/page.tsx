@@ -3,7 +3,11 @@ import SubHeading from "@/components/SubHeading";
 import SubmitASongForm from "@/components/SubmitASongForm";
 import { Parisienne } from "next/font/google";
 
-const parisienne = Parisienne({ weight: "400", preload: true });
+const parisienne = Parisienne({
+	weight: "400",
+	preload: true,
+	subsets: ["latin"],
+});
 
 export default function Home() {
 	const weddingDate = new Date("2025-09-20T00:00:00");
