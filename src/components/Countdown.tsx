@@ -4,12 +4,8 @@ import useCountdown from "@/hooks/useCountdown";
 import React from "react";
 import CountdownDisplay from "./CountdownDisplay";
 
-type Countdown = {
-	countdownDate: Date;
-};
-
-function Countdown({ countdownDate }: Countdown) {
-	const { days, hours, minutes, seconds } = useCountdown(countdownDate);
+function Countdown() {
+	const { days, hours, minutes, seconds } = useCountdown();
 
 	return (
 		<div className="flex gap-4 w-fit mx-auto">

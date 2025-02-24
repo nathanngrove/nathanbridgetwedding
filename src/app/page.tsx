@@ -10,8 +10,6 @@ const parisienne = Parisienne({
 });
 
 export default function Home() {
-	const weddingDate = new Date("2025-09-20T00:00:00");
-
 	return (
 		<>
 			<section className="flex flex-col gap-12 bg-creme overflow-x-hidden">
@@ -63,7 +61,7 @@ export default function Home() {
 					text="Let the countdown begin!"
 					className="pb-4 text-white text-4xl mx-auto w-fit"
 				/>
-				<Countdown countdownDate={weddingDate} />
+				<Countdown />
 			</section>
 		</>
 	);

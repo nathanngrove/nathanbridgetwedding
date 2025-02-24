@@ -2,7 +2,9 @@
 
 import { useEffect, useState } from "react";
 
-export default function useCountdown(countdownDate: Date) {
+export default function useCountdown() {
+	const countdownDate = new Date("2025-09-20T00:00:00");
+
 	const [days, setDays] = useState("000");
 	const [hours, setHours] = useState("000");
 	const [minutes, setMinutes] = useState("000");
