@@ -15,7 +15,7 @@ export default function Home() {
 		<>
 			<section className="flex flex-col gap-12 bg-creme overflow-x-hidden">
 				<Image
-					src="/leaves.png"
+					src="nathanbridgetwedding/leaves.png"
 					alt="leaves"
 					width={350}
 					height={233}
@@ -26,7 +26,7 @@ export default function Home() {
 					Nathan and Bridget
 				</h1>
 				<Image
-					src="/white-rose.png"
+					src="nathanbridgetwedding/white-rose.png"
 					alt="white rose"
 					width={300}
 					height={232}
