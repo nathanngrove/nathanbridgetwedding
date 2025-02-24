@@ -33,14 +33,15 @@ export default function Home() {
 					text="How it all started"
 					className={`text-white mx-auto`}
 				/>
-				<p className="text-white max-w-[60ch] text-sm/8">
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-					Quia laborum quibusdam provident temporibus aliquam. Iusto
-					labore sapiente ipsam maiores, quos obcaecati? Suscipit,
-					deleniti quidem eveniet non nihil debitis facilis autem
-					omnis, voluptatibus accusamus sapiente natus temporibus,
-					quisquam maxime voluptas impedit eos alias delectus nisi
-					ipsa voluptatum molestias dolores! Molestias, et.
+				<p className="text-white max-w-[60ch] text-sm/8 font-serif">
+					Six years ago, we met at our first job at a pizza
+					place—bonding over late-night shifts, endless orders, and
+					the occasional kitchen chaos. Somewhere between dealing with
+					hangry customers and making way too many breadsticks, we
+					found something even better than a paycheck. <br />
+					<br />
+					Now, after six years of laughter and adventures, we are
+					finally making it official!
 				</p>
 			</section>
 			<section className="py-16 px-8 bg-creme">

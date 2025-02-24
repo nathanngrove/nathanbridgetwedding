@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-	images: { domains: ["placehold.co"] },
+	output: "export",
+	reactStrictMode: true,
 };
 
 export default nextConfig;
