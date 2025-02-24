@@ -2,6 +2,7 @@ import Countdown from "@/components/Countdown";
 import SubHeading from "@/components/SubHeading";
 import SubmitASongForm from "@/components/SubmitASongForm";
 import { Parisienne } from "next/font/google";
+import Image from "next/image";
 
 const parisienne = Parisienne({
 	weight: "400",
@@ -13,20 +14,22 @@ export default function Home() {
 	return (
 		<>
 			<section className="flex flex-col gap-12 bg-creme overflow-x-hidden">
-				<img
-					src="/leaves.png"
+				<Image
+					src="nathanbridgetwedding/leaves.png"
 					alt="leaves"
 					width={350}
+					height={233}
 					className="mx-auto mt-[-1rem]"
 				/>
 				<h1
 					className={`text-5xl text-darkemerald mx-auto ${parisienne.className}`}>
 					Nathan and Bridget
 				</h1>
-				<img
-					src="/white-rose.png"
+				<Image
+					src="nathanbridgetwedding/white-rose.png"
 					alt="white rose"
 					width={300}
+					height={232}
 					className="translate-x-[35vw] md:translate-x-[50vw] lg:translate-x-[65vw]"
 				/>
 			</section>
