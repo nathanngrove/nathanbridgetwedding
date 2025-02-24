@@ -12,19 +12,18 @@ export type SongSubmission = {
 const initialState: SongSubmission = { artist: "", title: "" };
 
 function SubmitASongForm() {
-	const [state, formAction, isPending] = useActionState(
-		submitASongAction,
-		initialState
-	);
+	// const [state, formAction, isPending] = useActionState(
+	// 	submitASongAction,
+	// 	initialState
+	// );
 
 	return (
-		<form className="flex flex-col gap-2" action={formAction}>
+		<form className="flex flex-col gap-2">
 			<TextInput id="artist" label="Artist" />
 			<TextInput id="title" label="Title" />
 			<button
 				className="bg-darkemerald text-white py-2 text-xl font-semibold"
-				type="submit"
-				disabled={isPending}>
+				type="submit">
 				Submit
 			</button>
 		</form>
