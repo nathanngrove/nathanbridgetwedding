@@ -22,7 +22,7 @@ export default function Home() {
 					className="mx-auto mt-[-1rem]"
 				/>
 				<h1
-					className={`text-5xl text-darkemerald mx-auto ${parisienne.className}`}>
+					className={`md:text-5xl text-4xl text-darkemerald mx-auto ${parisienne.className}`}>
 					Nathan and Bridget
 				</h1>
 				<Image
@@ -62,7 +62,7 @@ export default function Home() {
 			<section className="py-16 px-8 bg-darkemerald">
 				<SubHeading
 					text="Let the countdown begin!"
-					className="pb-4 text-white md:text-3xl text-2xl mx-auto w-fit"
+					className="pb-4 text-white md:text-4xl text-2xl mx-auto w-fit"
 				/>
 				<Countdown />
 			</section>
