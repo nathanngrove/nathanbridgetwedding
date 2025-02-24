@@ -8,7 +8,7 @@ function Countdown() {
 	const { days, hours, minutes, seconds } = useCountdown();
 
 	return (
-		<div className="flex gap-4 w-fit mx-auto">
+		<div className="flex justify-between w-fit mx-auto">
 			<CountdownDisplay time={days} unitOfTime={"Days"} />
 			<CountdownDisplay time={hours} unitOfTime={"Hours"} />
 			<CountdownDisplay time={minutes} unitOfTime={"Minutes"} />
