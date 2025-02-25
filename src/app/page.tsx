@@ -1,3 +1,4 @@
+import submitASongAction from "@/actions/SubmitASongAction";
 import Countdown from "@/components/Countdown";
 import SubHeading from "@/components/SubHeading";
 import SubmitASongForm from "@/components/SubmitASongForm";
@@ -57,7 +58,7 @@ export default function Home() {
 				<div className="text-red-500 font-bold w-fit mx-auto">
 					*Not all submitted songs will be played.*
 				</div>
-				<SubmitASongForm />
+				<SubmitASongForm action={submitASongAction} />
 			</section>
 			<section className="py-16 px-8 bg-darkemerald">
 				<SubHeading

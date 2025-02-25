@@ -1,21 +1,19 @@
 "use client";
 
-import React from "react";
+import React, { useActionState } from "react";
 import TextInput from "./TextInput";
-// import submitASongAction from "@/actions/SubmitASongAction";
 
 export type SongSubmission = {
 	artist: string;
 	title: string;
 };
 
-// const initialState: SongSubmission = { artist: "", title: "" };
+const initialState: SongSubmission = { artist: "", title: "" };
 
-function SubmitASongForm() {
-	// const [state, formAction, isPending] = useActionState(
-	// 	submitASongAction,
-	// 	initialState
-	// );
+function SubmitASongForm(
+	action: (previousState: any, formData: FormData) => Promise<string>
+) {
+	const [state, formAction, isPending] = useActionState(action, initialState);
 
 	return (
 		<form className="flex flex-col gap-2">
