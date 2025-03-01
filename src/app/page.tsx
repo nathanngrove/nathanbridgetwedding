@@ -69,13 +69,13 @@ export default function Home() {
 					<Image
 						src="us.jpg"
 						alt="Us <3"
-						className="overflow-hidden rounded-[50%] border-2 border-white outline outline-2 outline-white outline-offset-8"
+						className="overflow-hidden block rounded-[50%] border-2 border-white outline outline-2 outline-white outline-offset-8"
 						width={300}
 						height={300}
 					/>
 				</div>
 			</section>
-			<section className="py-16 px-8 bg-darkemerald">
+			<section className={`py-16 px-8  bg-[url("roses.jpg")]`}>
 				<SubHeading
 					text="Let the countdown begin!"
 					className={`pb-12 text-white text-center mx-auto w-fit ${parisienne.className}`}
