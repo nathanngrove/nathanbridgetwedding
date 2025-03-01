@@ -54,13 +54,6 @@ export default function Home() {
 					<Image src="us.jpg" alt="Us <3" width={300} height={300} />
 				</div>
 			</section>
-			<section className="py-16 px-8 bg-creme">
-				<SubHeading
-					className={`text-darkemerald pb-4 text-left max-w-screen-lg mx-auto`}
-					text={"Suggest a song"}
-				/>
-				<SubmitASongForm />
-			</section>
 			<section className="py-16 px-8 bg-darkemerald">
 				<SubHeading
 					text="Let the countdown begin!"
