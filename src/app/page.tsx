@@ -55,7 +55,7 @@ export default function Home() {
 							text="How it all started"
 							className={`text-white text-left max-w-screen-lg mx-auto mb-8 ${parisienne.className}`}
 						/>
-						<p className="text-white max-w-[60ch] text-lg leading-10 font-serif">
+						<p className="text-white max-w-[60ch] text-md leading-10 font-serif">
 							We met at our first job at a pizza place—bonding
 							over late-night shifts, endless orders, and the
 							occasional kitchen chaos. Somewhere between dealing
