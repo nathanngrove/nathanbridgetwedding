@@ -79,8 +79,8 @@ export default function Home() {
 				<Image
 					src="roses.jpg"
 					alt="Roses"
-					width={1}
-					height={1}
+					width={610}
+					height={406}
 					className="left-0 right-0 top-0 bottom-0 absolute"
 				/>
 				<SubHeading
