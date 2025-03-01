@@ -14,16 +14,32 @@ export default function Home() {
 		<>
 			<section className="flex flex-col gap-12 bg-creme overflow-x-hidden">
 				<Image
-					src="leaves.png"
+					src="./public/leaves.png"
 					alt="leaves"
 					width={350}
 					height={233}
 					className="mx-auto mt-[-1rem]"
 				/>
-				<h1
-					className={`md:text-5xl text-4xl text-darkemerald mx-auto ${parisienne.className}`}>
-					Nathan and Bridget
-				</h1>
+				<div className="mx-auto text-center flex flex-col gap-8">
+					<h1
+						className={`md:text-5xl text-4xl text-darkemerald ${parisienne.className}`}>
+						Nathan and Bridget
+					</h1>
+					<div>
+						<SubHeading
+							text="Join us on"
+							className="lg:text-2xl text-lg text-darkemerald"
+						/>
+						<SubHeading
+							text="September 20, 2025"
+							className="lg:text-2xl text-lg text-darkemerald font-bold"
+						/>
+						<SubHeading
+							text="as we say 'I do'"
+							className="lg:text-2xl text-lg text-darkemerald"
+						/>
+					</div>
+				</div>
 				<Image
 					src="white-rose.png"
 					alt="white rose"
@@ -33,13 +49,13 @@ export default function Home() {
 				/>
 			</section>
 			<section className="bg-darkemerald p-8">
-				<div className="max-w-screen-lg mx-auto flex gap-4 items-center">
+				<div className="max-w-screen-lg mx-auto flex flex-col gap-8 md:flex-row md:justify-between items-center">
 					<div>
 						<SubHeading
 							text="How it all started"
-							className={`text-white text-left max-w-screen-lg mx-auto mb-8`}
+							className={`text-white text-left max-w-screen-lg mx-auto mb-8 ${parisienne.className}`}
 						/>
-						<p className="text-white max-w-[60ch] text-sm/10 font-serif">
+						<p className="text-white max-w-[60ch] text-md leading-8 font-serif">
 							We met at our first job at a pizza place—bonding
 							over late-night shifts, endless orders, and the
 							occasional kitchen chaos. Somewhere between dealing
@@ -53,7 +69,7 @@ export default function Home() {
 					<Image
 						src="us.jpg"
 						alt="Us <3"
-						className="overflow-hidden rounded-md"
+						className="overflow-hidden rounded-md border-2 border-white outline-2 outline-white outline-offset-[12px]"
 						width={300}
 						height={300}
 					/>
@@ -62,7 +78,7 @@ export default function Home() {
 			<section className="py-16 px-8 bg-darkemerald">
 				<SubHeading
 					text="Let the countdown begin!"
-					className="pb-4 text-white md:text-4xl text-2xl mx-auto w-fit"
+					className="pb-4 text-white mx-auto w-fit ${parisienne.className}"
 				/>
 				<Countdown />
 			</section>

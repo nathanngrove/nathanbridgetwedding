@@ -2,13 +2,6 @@
 
 import React from "react";
 import { twMerge } from "tailwind-merge";
-import { Parisienne } from "next/font/google";
-
-const parisienne = Parisienne({
-	weight: "400",
-	preload: true,
-	subsets: ["latin"],
-});
 
 type SubHeadingProps = {
 	text: string;
@@ -20,8 +13,8 @@ function SubHeading({ text, className }: SubHeadingProps) {
 		<h2
 			className={
 				className
-					? twMerge(`text-3xl ${parisienne.className}`, className)
-					: `text-3xl ${parisienne.className}`
+					? twMerge(`lg:text-4xl text-3xl font-serif`, className)
+					: `lg:text-4xl text-3xl font-serif`
 			}>
 			{text}
 		</h2>
