@@ -50,7 +50,13 @@ export default function Home() {
 							Now, we are finally making it official!
 						</p>
 					</div>
-					<Image src="us.jpg" alt="Us <3" width={300} height={300} />
+					<Image
+						src="us.jpg"
+						alt="Us <3"
+						className="overflow-hidden rounded-md"
+						width={300}
+						height={300}
+					/>
 				</div>
 			</section>
 			<section className="py-16 px-8 bg-darkemerald">
