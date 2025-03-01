@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.countdown-image {
+	background-image: url("roses.jpg");
+}
