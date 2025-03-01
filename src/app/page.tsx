@@ -82,11 +82,13 @@ export default function Home() {
 					fill
 					className="left-0 right-0 top-0 bottom-0 absolute object-cover"
 				/>
-				<SubHeading
-					text="Let the countdown begin!"
-					className={`pb-12 text-white text-center mx-auto w-fit ${parisienne.className}`}
-				/>
-				<Countdown />
+				<div className="relative z-10">
+					<SubHeading
+						text="Let the countdown begin!"
+						className={`pb-12 text-white text-center mx-auto w-fit ${parisienne.className}`}
+					/>
+					<Countdown />
+				</div>
 			</section>
 		</>
 	);
