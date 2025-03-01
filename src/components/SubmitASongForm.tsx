@@ -2,26 +2,24 @@
 
 import React, { useActionState } from "react";
 import TextInput from "./TextInput";
+import { submitASongAction } from "@/actions/actions";
 
-export type SongSubmission = {
-	artist: string;
-	title: string;
-};
+function SubmitASongForm() {
+	const [state, formAction, isPending] = useActionState(
+		submitASongAction,
+		undefined
+	);
 
-const initialState: SongSubmission = { artist: "", title: "" };
-
-function SubmitASongForm(
-	action: (previousState: any, formData: FormData) => Promise<string>
-) {
-	const [state, formAction, isPending] = useActionState(action, initialState);
+	console.log(state);
 
 	return (
-		<form className="flex flex-col gap-2">
+		<form className="flex flex-col gap-4" action={formAction}>
 			<TextInput id="artist" label="Artist" />
 			<TextInput id="title" label="Title" />
 			<button
-				className="bg-darkemerald text-white py-2 text-xl font-semibold"
-				type="submit">
+				type="submit"
+				className="bg-darkemerald text-white py-2 font-semibold"
+				disabled={isPending}>
 				Submit
 			</button>
 		</form>

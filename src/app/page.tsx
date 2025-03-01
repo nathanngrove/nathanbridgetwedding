@@ -1,4 +1,3 @@
-import submitASongAction from "@/actions/SubmitASongAction";
 import Countdown from "@/components/Countdown";
 import SubHeading from "@/components/SubHeading";
 import SubmitASongForm from "@/components/SubmitASongForm";
@@ -40,25 +39,24 @@ export default function Home() {
 					className={`text-white mx-auto`}
 				/>
 				<p className="text-white max-w-[60ch] text-sm/8 font-serif">
-					Six years ago, we met at our first job at a pizza
-					place—bonding over late-night shifts, endless orders, and
-					the occasional kitchen chaos. Somewhere between dealing with
-					hangry customers and making way too many breadsticks, we
-					found something even better than a paycheck. <br />
+					We met at our first job at a pizza place—bonding over
+					late-night shifts, endless orders, and the occasional
+					kitchen chaos. Somewhere between dealing with hangry
+					customers and making way too many breadsticks, we found
+					something even better than a paycheck. <br />
 					<br />
-					Now, after six years of laughter and adventures, we are
-					finally making it official!
+					Now, we are finally making it official!
 				</p>
 			</section>
 			<section className="py-16 px-8 bg-creme">
 				<SubHeading
 					className={`text-darkemerald mx-auto pb-4`}
-					text={"Suggest some music"}
+					text={"Suggest a song"}
 				/>
 				<div className="text-red-500 font-bold w-fit mx-auto">
 					*Not all submitted songs will be played.*
 				</div>
-				<SubmitASongForm action={submitASongAction} />
+				<SubmitASongForm />
 			</section>
 			<section className="py-16 px-8 bg-darkemerald">
 				<SubHeading

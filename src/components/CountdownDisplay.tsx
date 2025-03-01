@@ -16,9 +16,14 @@ type CountdownDisplayProps = {
 
 function CountdownDisplay({ time, unitOfTime }: CountdownDisplayProps) {
 	return (
-		<div className={`flex flex-col ${parisienne.className} items-center`}>
-			<div className="md:text-5xl text-4xl text-white">{time}</div>
-			<div className="md:text-3xl text-2xl text-white">{unitOfTime}</div>
+		<div className={`flex flex-col items-center`}>
+			<div
+				className={`md:text-5xl text-4xl ${parisienne.className} text-white`}>
+				{time}
+			</div>
+			<div className="md:text-3xl text-2xl text-white font-serif">
+				{unitOfTime}
+			</div>
 		</div>
 	);
 }

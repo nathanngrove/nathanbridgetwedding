@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 
 type TextInputProps = {
@@ -8,7 +10,7 @@ type TextInputProps = {
 
 function TextInput({ label, id, placeholder }: TextInputProps) {
 	return (
-		<>
+		<div className="flex flex-col gap-2">
 			<label htmlFor={id}>{label}</label>
 			<input
 				type="text"
@@ -16,8 +18,9 @@ function TextInput({ label, id, placeholder }: TextInputProps) {
 				className="border-2 border-black p-2"
 				id={id}
 				placeholder={placeholder ? placeholder : label}
+				required
 			/>
-		</>
+		</div>
 	);
 }
 
