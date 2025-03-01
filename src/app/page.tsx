@@ -14,7 +14,7 @@ export default function Home() {
 		<>
 			<section className="flex flex-col gap-12 bg-creme overflow-x-hidden">
 				<Image
-					src="./public/leaves.png"
+					src="leaves.png"
 					alt="leaves"
 					width={350}
 					height={233}
