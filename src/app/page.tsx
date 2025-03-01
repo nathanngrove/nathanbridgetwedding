@@ -75,7 +75,14 @@ export default function Home() {
 					/>
 				</div>
 			</section>
-			<section className={`py-16 px-8 countdown-image`}>
+			<section className={`py-16 px-8 bg-darkemerald relative`}>
+				<Image
+					src="roses.jpg"
+					alt="Roses"
+					width={1}
+					height={1}
+					className="left-0 right-0 top-0 bottom-0 absolute"
+				/>
 				<SubHeading
 					text="Let the countdown begin!"
 					className={`pb-12 text-white text-center mx-auto w-fit ${parisienne.className}`}
