@@ -22,21 +22,21 @@ export default function Home() {
 				/>
 				<div className="mx-auto text-center flex flex-col gap-8">
 					<h1
-						className={`md:text-5xl text-4xl text-darkemerald ${parisienne.className}`}>
+						className={`md:text-6xl text-5xl text-darkemerald ${parisienne.className}`}>
 						Nathan and Bridget
 					</h1>
 					<div>
 						<SubHeading
 							text="Join us on"
-							className="lg:text-2xl text-lg text-darkemerald"
+							className="lg:text-3xl text-2xl text-darkemerald"
 						/>
 						<SubHeading
 							text="September 20, 2025"
-							className="lg:text-2xl text-lg text-darkemerald font-bold"
+							className="lg:text-3xl text-2xl text-darkemerald font-bold"
 						/>
 						<SubHeading
-							text="as we say 'I do'"
-							className="lg:text-2xl text-lg text-darkemerald"
+							text={`as we say "I do"`}
+							className="lg:text-3xl text-2xl text-darkemerald"
 						/>
 					</div>
 				</div>
@@ -55,7 +55,7 @@ export default function Home() {
 							text="How it all started"
 							className={`text-white text-left max-w-screen-lg mx-auto mb-8 ${parisienne.className}`}
 						/>
-						<p className="text-white max-w-[60ch] text-md leading-8 font-serif">
+						<p className="text-white max-w-[60ch] text-lg leading-10 font-serif">
 							We met at our first job at a pizza place—bonding
 							over late-night shifts, endless orders, and the
 							occasional kitchen chaos. Somewhere between dealing
@@ -69,7 +69,7 @@ export default function Home() {
 					<Image
 						src="us.jpg"
 						alt="Us <3"
-						className="overflow-hidden rounded-full border-2 border-white outline outline-2 outline-white outline-offset-8"
+						className="overflow-hidden rounded-[50%] border-2 border-white outline outline-2 outline-white outline-offset-8"
 						width={300}
 						height={300}
 					/>
@@ -78,7 +78,7 @@ export default function Home() {
 			<section className="py-16 px-8 bg-darkemerald">
 				<SubHeading
 					text="Let the countdown begin!"
-					className="pb-4 text-white mx-auto w-fit ${parisienne.className}"
+					className={`pb-12 text-white text-center mx-auto w-fit ${parisienne.className}`}
 				/>
 				<Countdown />
 			</section>
