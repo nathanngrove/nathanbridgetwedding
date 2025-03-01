@@ -77,11 +77,10 @@ export default function Home() {
 			</section>
 			<section className={`py-16 px-8 bg-darkemerald relative`}>
 				<Image
-					src="roses.jpg"
-					alt="Roses"
-					width={610}
-					height={406}
-					className="left-0 right-0 top-0 bottom-0 absolute"
+					src="floral.jpg"
+					alt="Floral"
+					fill
+					className="left-0 right-0 top-0 bottom-0 absolute object-cover"
 				/>
 				<SubHeading
 					text="Let the countdown begin!"
