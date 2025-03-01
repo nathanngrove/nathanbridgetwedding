@@ -16,12 +16,14 @@ function SubmitASongForm() {
 			action={formAction}>
 			<TextInput id="artist" label="Artist" />
 			<TextInput id="title" label="Title" />
+			{state?.status === "error" ? <div>{state.message}</div> : null}
 			<button
 				type="submit"
 				className="bg-darkemerald text-white py-2 font-semibold"
 				disabled={isPending}>
 				Submit
 			</button>
+			{state?.status === "success" ? <div>{state.message}</div> : null}
 		</form>
 	);
 }
