@@ -10,10 +10,10 @@ function SubmitASongForm() {
 		undefined
 	);
 
-	console.log(state);
-
 	return (
-		<form className="flex flex-col gap-4" action={formAction}>
+		<form
+			className="flex flex-col gap-4 text-left max-w-screen-lg mx-auto"
+			action={formAction}>
 			<TextInput id="artist" label="Artist" />
 			<TextInput id="title" label="Title" />
 			<button

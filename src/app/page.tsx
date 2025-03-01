@@ -34,28 +34,31 @@ export default function Home() {
 				/>
 			</section>
 			<section className="bg-darkemerald p-8">
-				<SubHeading
-					text="How it all started"
-					className={`text-white mx-auto`}
-				/>
-				<p className="text-white max-w-[60ch] text-sm/8 font-serif">
-					We met at our first job at a pizza place—bonding over
-					late-night shifts, endless orders, and the occasional
-					kitchen chaos. Somewhere between dealing with hangry
-					customers and making way too many breadsticks, we found
-					something even better than a paycheck. <br />
-					<br />
-					Now, we are finally making it official!
-				</p>
+				<div className="max-w-screen-lg mx-auto flex gap-4 items-center">
+					<div>
+						<SubHeading
+							text="How it all started"
+							className={`text-white text-left max-w-screen-lg mx-auto mb-8`}
+						/>
+						<p className="text-white max-w-[60ch] text-sm/10 font-serif">
+							We met at our first job at a pizza place—bonding
+							over late-night shifts, endless orders, and the
+							occasional kitchen chaos. Somewhere between dealing
+							with hangry customers and making way too many
+							breadsticks, we found something even better than a
+							paycheck. <br />
+							<br />
+							Now, we are finally making it official!
+						</p>
+					</div>
+					<Image src="us.jpg" alt="Us <3" width={300} height={300} />
+				</div>
 			</section>
 			<section className="py-16 px-8 bg-creme">
 				<SubHeading
-					className={`text-darkemerald mx-auto pb-4`}
+					className={`text-darkemerald pb-4 text-left max-w-screen-lg mx-auto`}
 					text={"Suggest a song"}
 				/>
-				<div className="text-red-500 font-bold w-fit mx-auto">
-					*Not all submitted songs will be played.*
-				</div>
 				<SubmitASongForm />
 			</section>
 			<section className="py-16 px-8 bg-darkemerald">
