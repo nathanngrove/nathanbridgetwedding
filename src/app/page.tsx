@@ -69,7 +69,7 @@ export default function Home() {
 					<Image
 						src="us.jpg"
 						alt="Us <3"
-						className="overflow-hidden rounded-full border-2 border-white outline-2 outline-white outline-offset-[12px]"
+						className="overflow-hidden rounded-full border-2 border-white outline outline-2 outline-white outline-offset-8"
 						width={300}
 						height={300}
 					/>
