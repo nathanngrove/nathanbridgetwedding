@@ -6,6 +6,7 @@ import { z } from "zod";
 
 const inputSchema = z.string();
 
+/* eslint-disable  @typescript-eslint/no-explicit-any */
 export async function submitASongAction(prevState: any, formData: FormData) {
 	const artist = formData.get("artist");
 	const title = formData.get("title");
