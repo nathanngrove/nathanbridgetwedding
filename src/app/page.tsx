@@ -22,7 +22,7 @@ export default function Home() {
 				/>
 				<div className="mx-auto text-center flex flex-col gap-8">
 					<h1
-						className={`md:text-6xl text-5xl text-darkemerald ${parisienne.className}`}>
+						className={`md:text-6xl text-4xl text-darkemerald ${parisienne.className}`}>
 						Nathan and Bridget
 					</h1>
 					<div>

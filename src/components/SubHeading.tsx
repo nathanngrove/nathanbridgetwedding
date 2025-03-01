@@ -13,8 +13,8 @@ function SubHeading({ text, className }: SubHeadingProps) {
 		<h2
 			className={
 				className
-					? twMerge(`lg:text-6xl text-5xl font-serif`, className)
-					: `lg:text-6xl text-5xl font-serif`
+					? twMerge(`lg:text-5xl text-3xl font-serif`, className)
+					: `lg:text-5xl text-3xl font-serif`
 			}>
 			{text}
 		</h2>
