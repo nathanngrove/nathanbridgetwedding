@@ -3,8 +3,7 @@
 import { InviteType } from "@/app/rsvp/invite/[id]/page";
 import React, { useRef, useState } from "react";
 import FormSelectInput from "./FormSelectInput";
-import { validName } from "@/app/rsvp/page";
-import { ZodError } from "zod/v4";
+import { validName } from "@/utlis/utils";
 import { useRouter } from "next/navigation";
 
 type RsvpFormProps = {
@@ -12,7 +11,7 @@ type RsvpFormProps = {
 };
 
 function RsvpForm({ invite }: RsvpFormProps) {
-	const [error, setError] = useState<string | ZodError<string> | null>(null);
+	const [error, setError] = useState<string | null>(null);
 	const router = useRouter();
 
 	const [vegetarianCount, setVegetarianCount] = useState<number>(
@@ -36,7 +35,8 @@ function RsvpForm({ invite }: RsvpFormProps) {
 
 		namesArray.forEach((name) => {
 			const validatedName = validName.safeParse(name);
-			if (!validatedName.success) setError(validatedName.error);
+			if (!validatedName.success)
+				setError(validatedName.error.toString());
 		});
 
 		const formData = {

@@ -1,32 +1,23 @@
 "use client";
 
 import FromInput from "@/components/FromInput";
+import { validName } from "@/utlis/utils";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import * as z from "zod/v4";
-
-export const validName = z
-	.string()
-	.trim()
-	.max(20)
-	.min(1)
-	.regex(/[A-Za-z]/);
 
 export default function RSVP() {
 	const router = useRouter();
 
-	const [error, setError] = useState<string | z.ZodError<string> | null>(
-		null
-	);
+	const [error, setError] = useState<string | null>(null);
 
 	async function getInviteIdByName(formData: FormData) {
 		const firstName = formData.get("first-name");
 		const lastName = formData.get("last-name");
 
 		const validFirstName = validName.safeParse(firstName);
-		if (!validFirstName.success) setError(validFirstName.error);
+		if (!validFirstName.success) setError(validFirstName.error.toString());
 		const validLastName = validName.safeParse(lastName);
-		if (!validLastName.success) setError(validLastName.error);
+		if (!validLastName.success) setError(validLastName.error.toString());
 
 		try {
 			const nameInUrl =

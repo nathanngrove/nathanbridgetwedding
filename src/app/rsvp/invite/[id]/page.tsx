@@ -53,7 +53,7 @@ function Page() {
 		}
 
 		fetchData();
-	}, []);
+	}, [id]);
 
 	if (loading) return <div>Loading...</div>;
 
