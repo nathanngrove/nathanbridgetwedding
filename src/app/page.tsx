@@ -1,4 +1,7 @@
+"use client";
+
 import Countdown from "@/components/Countdown";
+import FaqAccordion from "@/components/FaqAccordion";
 import SubHeading from "@/components/SubHeading";
 import { Parisienne } from "next/font/google";
 import Image from "next/image";
@@ -39,6 +42,17 @@ export default function Home() {
 							className="lg:text-3xl text-2xl text-darkemerald"
 						/>
 					</div>
+					<div>
+						<SubHeading
+							text={`Please RSVP by August 10th`}
+							className="lg:text-3xl text-2xl text-darkemerald pb-4"
+						/>
+						<a
+							href="/rsvp"
+							className="bg-darkemerald text-white w-full rounded-md text-2xl py-2 px-4">
+							RSVP Here
+						</a>
+					</div>
 				</div>
 				<Image
 					src="white-rose.png"
@@ -48,33 +62,47 @@ export default function Home() {
 					className="translate-x-[35vw] md:translate-x-[50vw] lg:translate-x-[65vw]"
 				/>
 			</section>
-			<section className="bg-darkemerald p-8">
-				<div className="max-w-screen-lg mx-auto flex flex-col gap-8 md:flex-row md:justify-between items-center">
+			<section className="bg-creme p-8">
+				<div className="max-w-screen-lg mx-auto flex flex-col gap-8">
 					<div>
 						<SubHeading
-							text="How it all started"
-							className={`text-white text-left max-w-screen-lg mx-auto mb-8 ${parisienne.className}`}
+							text="FAQ"
+							className={`text-darkemerald text-left max-w-screen-lg mx-auto mb-8 ${parisienne.className}`}
 						/>
-						<p className="text-white max-w-[60ch] text-md leading-10 font-serif">
-							We met at our first job at a pizza place—bonding
-							over late-night shifts, endless orders, and the
-							occasional kitchen chaos. Somewhere between dealing
-							with hangry customers and making way too many
-							breadsticks, we found something even better than a
-							paycheck. <br />
-							<br />
-							Now, we are finally making it official!
-						</p>
+						<FaqAccordion
+							summary={"Is there a dress code?"}
+							details={
+								"Cocktail attire, but feel free to be flexible and express your personal style."
+							}
+						/>
+						<FaqAccordion
+							summary={"Can I bring a date or guest?"}
+							details={
+								"You can bring a date or guest only if specifically indicated on your invitation."
+							}
+						/>
+						<FaqAccordion
+							summary={
+								"Are there accommodations for out of town guests?"
+							}
+							details={
+								"Guests will need to arrange their own accommodations."
+							}
+						/>
+						<FaqAccordion
+							summary={"Are children welcome at the wedding?"}
+							details={
+								"Children are of course welcome at the wedding."
+							}
+						/>
+						<FaqAccordion
+							summary={"Parking at the venue and the reception?"}
+							details={"Free parking at both locations."}
+						/>
 					</div>
-					<Image
-						src="us.jpg"
-						alt="Us <3"
-						className="overflow-hidden block rounded-[50%] border-2 border-white outline outline-2 outline-white outline-offset-8"
-						width={300}
-						height={300}
-					/>
 				</div>
 			</section>
+
 			<section className={`py-16 px-8 bg-darkemerald relative`}>
 				<Image
 					src="floral-dark.jpg"
