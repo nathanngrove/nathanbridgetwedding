@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
 	basePath: "/nathanbridgetwedding",
-	output: "standalone",
+	output: "export",
 	images: { unoptimized: true },
 };
 

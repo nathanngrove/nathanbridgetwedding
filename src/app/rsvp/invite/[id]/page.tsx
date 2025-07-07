@@ -17,8 +17,17 @@ export type InviteType = {
 	attendingNames: Array<string>;
 };
 
-function Page({ params }: { params: Promise<{ id: string }> }) {
-	const { id } = use(params);
+export function generateStaticParams() {
+	const params: Array<{ id: number }> = [];
+
+	for (let i = 0; i < 55; i++) {
+		params.push({ id: i });
+	}
+	return params;
+}
+
+async function Page({ params }: { params: Promise<{ id: string }> }) {
+	const { id } = await params;
 
 	const [data, setData] = useState<InviteType>();
 	const [loading, setLoading] = useState<boolean>();
