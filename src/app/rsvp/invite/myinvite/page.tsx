@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import React, { useEffect, useState } from "react";
 import RsvpForm from "@/components/RsvpForm";
 
 export type InviteType = {
@@ -18,9 +18,14 @@ export type InviteType = {
 };
 
 function Page() {
-	const pathname = usePathname();
-	const splitPathname = pathname.split("/");
-	const id = splitPathname[splitPathname.length - 1];
+	const [id, setId] = useState<string | null>(null);
+
+	useEffect(() => {
+		const localId = localStorage.getItem("id");
+		setId(localId);
+	}, [id]);
+
+	console.log(id);
 
 	const [data, setData] = useState<InviteType>();
 	const [loading, setLoading] = useState<boolean>();
