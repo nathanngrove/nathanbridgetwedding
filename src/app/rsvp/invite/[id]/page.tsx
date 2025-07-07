@@ -1,7 +1,7 @@
 "use client";
 
+import { use } from "react";
 import React, { useEffect, useState } from "react";
-import { usePathname } from "next/navigation";
 import RsvpForm from "@/components/RsvpForm";
 
 export type InviteType = {
@@ -17,10 +17,8 @@ export type InviteType = {
 	attendingNames: Array<string>;
 };
 
-function Page() {
-	const pathname = usePathname();
-	const splitPathname = pathname.split("/");
-	const id = splitPathname[splitPathname.length - 1];
+function Page({ params }: { params: Promise<{ id: string }> }) {
+	const { id } = use(params);
 
 	const [data, setData] = useState<InviteType>();
 	const [loading, setLoading] = useState<boolean>();
