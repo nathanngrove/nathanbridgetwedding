@@ -1,6 +1,3 @@
-"use client";
-
-import { use } from "react";
 import React, { useEffect, useState } from "react";
 import RsvpForm from "@/components/RsvpForm";
 
