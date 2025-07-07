@@ -68,7 +68,7 @@ function RsvpForm({ invite }: RsvpFormProps) {
 			}
 
 			if (res.ok) {
-				const posted = await res.json();
+				await res.json();
 				router.push(`/`);
 			}
 		} catch (e) {
@@ -160,6 +160,9 @@ function RsvpForm({ invite }: RsvpFormProps) {
 						/>
 					</>
 				)}
+				{error ? (
+					<p className="text-red-500 font-bold">{error.toString()}</p>
+				) : null}
 				<button
 					type="submit"
 					className="bg-darkemerald text-white w-full rounded-md text-3xl py-2">

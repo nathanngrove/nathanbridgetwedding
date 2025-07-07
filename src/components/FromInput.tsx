@@ -2,19 +2,11 @@ import React from "react";
 
 type FormInputType = {
 	name: string;
-	value?: number;
 	disabled?: boolean;
-	setSelected?: React.Dispatch<React.SetStateAction<number>>;
 	label?: string;
 };
 
-function FromInput({
-	name,
-	value,
-	disabled = false,
-	setSelected,
-	label,
-}: FormInputType) {
+function FromInput({ name, disabled = false, label }: FormInputType) {
 	return (
 		<div className="grid gap-2">
 			{label == null ? null : <label htmlFor={name}>{label}</label>}

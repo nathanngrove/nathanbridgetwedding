@@ -13,7 +13,7 @@ export type InviteType = {
 	kidsAttendingCount: number;
 	vegetarianCount: number;
 	dietaryRestrictions: string;
-	persons: Array<any>;
+	persons: Array<object>;
 	attendingNames: Array<string>;
 };
 
