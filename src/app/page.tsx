@@ -48,7 +48,7 @@ export default function Home() {
 							className="lg:text-3xl text-2xl text-darkemerald pb-4"
 						/>
 						<a
-							href="/rsvp"
+							href="https://wedding-lemon-nu.vercel.app/rsvp"
 							className="bg-darkemerald text-white w-full rounded-md text-2xl py-2 px-4">
 							RSVP Here
 						</a>
