@@ -111,6 +111,15 @@ export default function Home() {
 								className="w-[80%] max-w-[400px] mx-auto py-8"
 							/>
 						</a>
+						<a
+							target="_blank"
+							href="https://www.target.com/gift-registry/gift/nathanbridgetwedding">
+							<img
+								src="target.png"
+								alt="Target wedding registy logo"
+								className="w-[80%] max-w-[400px] mx-auto py-8"
+							/>
+						</a>
 					</div>
 				</div>
 			</section>
